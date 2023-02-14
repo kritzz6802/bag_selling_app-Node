@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid mt-5 contact-style" id="contactid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center main-heading">Login Page</h1>
+                <p class="text-center">we will be happy to help you</p>
+                <div class="row">
+                    <div class="col-md-6 col-12 mx-auto">
+                        <form action="/login" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    name="email">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">password</label>
+                                <input type="password" class="form-control" id="message" name="password">
+                            </div>
+
+                            <button type="submit" class="btn-style btn-primary">Submit</button>
+                            <a href="forget">Forget Password</a> 👈 👉
+                            <a href="/verification">verification</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
